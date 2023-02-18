@@ -1,0 +1,14 @@
+---
+import Button from "../components/Button.astro";
+import { Image } from '@astrojs/image/components';
+import localImage from "../assets/images/social.jpg";
+const localAlt = "The Astro Logo";
+---
+
+<div>
+  <Image src={localImage} width={300} height={600} alt={localAlt}/>
+</div>
+
+<div>
+  <img src="/images/social.jpg" />
+</div>
