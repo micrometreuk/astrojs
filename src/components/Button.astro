@@ -1,0 +1,20 @@
+---
+---
+
+<style>
+  .main {
+    background-color: #ff9776;
+  }
+</style>
+
+<button class="alert">Click me!</button>
+<img src="/images/social.jpg" />
+
+<script>
+  const buttons = document.querySelectorAll("button.alert");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      alert("Button was clicked!");
+    });
+  });
+</script>
